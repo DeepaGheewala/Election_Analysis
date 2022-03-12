@@ -16,7 +16,7 @@ Inorder to analyze the data we read the data from [Election Result data file](ht
 This file was analyzed using the Python Code and the results generated were stored into [Election Analysis text file](https://github.com/DeepaGheewala/Election_Analysis/blob/694fc9f2d651ffb8712654427bf5171775bf11bf/analysis/election_analysis.txt)
 The below image shows the analysis results 
 
-![Election Analysis outcome](/Resources/election_analysis.png = 70x40)
+![Election Analysis outcome](/Resources/election_analysis.png =100x20)
 
 
 ###Detailed Report

@@ -10,9 +10,9 @@ Election commision was provided with Audit Results collected from all the 3 voti
 	
 ### Purpose
 The purpose of this project is to provide more information related to the Audit Results which was submitted to The Election Commission. We work over the data, analyzed and created a report to answers the following requested details
-	- The Voter turnout for each county
-	- The percentage of Votes from each county out of the total count
-	- The county with the highest turnout
+	- The Voter turnout for each county  
+	- The percentage of Votes from each county out of the total count  
+	- The county with the highest turnout  
 
 ## Election-Audit Results
 ### Overview

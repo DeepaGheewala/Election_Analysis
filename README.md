@@ -18,10 +18,10 @@ The purpose of this project is to provide more information related to the Audit 
 ### Overview
 In order to analyze the data we read the data from [Election Result data file](https://github.com/DeepaGheewala/Election_Analysis/blob/694fc9f2d651ffb8712654427bf5171775bf11bf/Resources/election_results.csv)
 
-This file was analyzed using the Python Code and the results generated were stored into [Election Analysis text file](https://github.com/DeepaGheewala/Election_Analysis/blob/694fc9f2d651ffb8712654427bf5171775bf11bf/analysis/election_analysis.txt)
-The below image shows the analysis results
+The Election Result Data file was analyzed using the Python Code and the results generated were stored into [Election Analysis text file](https://github.com/DeepaGheewala/Election_Analysis/blob/694fc9f2d651ffb8712654427bf5171775bf11bf/analysis/election_analysis.txt)
+The below image shows the analysis results printed on the command line
 
-<img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/election_analysis.png" width="350" height="450"/>
+<img src="https://github.com/DeepaGheewala/Election_Analysis/blob/b44725b26098e8f5b4c3730b0cc82a5c77e1bb44/Resources/CommanLine_Output.png" width="350" height="450"/>
 
 
 ### Detailed Report
@@ -40,7 +40,7 @@ Let see more details regarding the Analysis Report. The snapshots used below are
    Total ***369,711*** votes were cast during this Congressional Election.
    This count includes all different ways of Voting modes as explained in the [Background](#Background)
 
-  <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/TotalVotes.png" width="300" height="150"/>
+  <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/TotalVotes.png" width="250" height="300"/>
  
    ***Refer Code Snippet to [Calculate Total Votes](#Calculate-Total-Votes)***
 

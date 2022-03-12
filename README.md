@@ -26,7 +26,7 @@ Let us understand in detail regarding the Analysis Report. The snapshots used be
  ![Total Votes](/Resources/TotalVotes.png )
  
 **County wise breakdown and percentage of total votes and determined the largest number of votes of winning County**
-![Winning County](/Resources/LargestCountyVotes.png)
+![Winning County](/Resources/LargestCountyVotes.png =100x20)
 
 **Candidate wise breakdown and percentage of total votes and determined the winning Candidate**
 ![Winning Candidate](/Resources/winner.png)

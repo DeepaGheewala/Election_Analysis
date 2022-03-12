@@ -23,10 +23,10 @@ The below image shows the analysis results
 Let us understand in detail regarding the Analysis Report. The snapshots used below are taken from the [Election Analysis file](https://github.com/DeepaGheewala/Election_Analysis/blob/694fc9f2d651ffb8712654427bf5171775bf11bf/analysis/election_analysis.txt)
 **How many votes were cast in this congressional election?**
  Total of ***369,711** votes were casted during this Congressional Election.
- ![Total Votes](https://github.com/DeepaGheewala/Election_Analysis/blob/69df806e8a8ac58e4bfa2b4571e883ee6864a619/Resources/TotalVotes.png =250x)
+ ![Total Votes](https://github.com/DeepaGheewala/Election_Analysis/blob/69df806e8a8ac58e4bfa2b4571e883ee6864a619/Resources/TotalVotes.png )
  
 **Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.**
-![County wise outcome](/Resources/LargestCountyVotes.png
+![County wise outcome](/Resources/LargestCountyVotes.png)
 
 **Which county had the largest number of votes?**
-![Winning County](https://github.com/DeepaGheewala/Election_Analysis/blob/69df806e8a8ac58e4bfa2b4571e883ee6864a619/Resources/LargestCountyVotes.png =250x)
+![Winning County](https://github.com/DeepaGheewala/Election_Analysis/blob/69df806e8a8ac58e4bfa2b4571e883ee6864a619/Resources/LargestCountyVotes.png)

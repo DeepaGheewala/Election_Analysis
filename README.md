@@ -26,7 +26,7 @@ Let us understand in detail regarding the Analysis Report. The snapshots used be
  ![Total Votes](https://github.com/DeepaGheewala/Election_Analysis/blob/69df806e8a8ac58e4bfa2b4571e883ee6864a619/Resources/TotalVotes.png =250x)
  
 **Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.**
-![County wise outcome](https://github.com/DeepaGheewala/Election_Analysis/blob/69df806e8a8ac58e4bfa2b4571e883ee6864a619/Resources/countwisevotes.png =250x)
+![County wise outcome](/Resources/LargestCountyVotes.png =250x)
 
 **Which county had the largest number of votes?**
 ![Winning County](https://github.com/DeepaGheewala/Election_Analysis/blob/69df806e8a8ac58e4bfa2b4571e883ee6864a619/Resources/LargestCountyVotes.png =250x)

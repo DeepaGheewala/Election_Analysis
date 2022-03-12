@@ -22,7 +22,51 @@ The below image shows the analysis results
 ### Detailed Report
 Let us understand in detail regarding the Analysis Report. The snapshots used below are taken from the [Election Analysis file](/analysis/election_analysis.txt)
    
-  The below code snippet was used for reading the CSV file [Election Result data file](https://github.com/DeepaGheewala/Election_Analysis/blob/694fc9f2d651ffb8712654427bf5171775bf11bf/Resources/election_results.csv)
+  Refer to the code snippet [To Read CSV](#To-Read-CSV)
+  [Election Result data file](https://github.com/DeepaGheewala/Election_Analysis/blob/694fc9f2d651ffb8712654427bf5171775bf11bf/Resources/election_results.csv)
+
+  
+  Refer to the code snippet [To Write in TXT file](#To-Write-in-TXT-file)
+  [Election Analysis file](/analysis/election_analysis.txt)
+  
+
+    
+#### Total votes casted in this congressional election 
+  Total of ***369,711** votes were casted during this Congressional Election.
+ <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/TotalVotes.png" width="300" height="150"/>
+ 
+
+ ***Refer to [Calculate Total Votes](#Calculate-Total-Votes)***
+ 
+ 
+#### County wise breakdown and percentage of total votes and determined the largest number of votes of winning County
+<img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/LargestCountyVotes.png" width="300" height="200"/>
+
+***To get distinct list of counties and count votes for each county***
+ 1. Read each county value from the extracted row and check if the previous county name is same as the current. 
+ 2. Once we have all the list of counties and corresponding vote countes
+	- Iterate through each county to find the percentage of Votes
+ 	- compare and find the winning county
+ 3 Lastly write into the file
+ 
+ ***Refer to [Find County Votes and Winner](#Find-County-Votes-and-Winner)***
+
+#### Candidate wise breakdown and percentage of total votes and determined the winning Candidate
+	
+<img src="https://github.com/DeepaGheewala/Election_Analysis/blob/e23022b8df9a28cccc7f8bdb59923d0aeee94ffc/Resources/winner.png" width="300" height="200"/>
+
+***To get distinct list of candidates and count votes for each Candidate***
+ 1. Read each Candidates from the extracted row and check if the previous county name is same as the current. 
+ 2. Once we have all the list of counties and corresponding vote countes
+	- Iterate through each county to find the percentage of Votes
+ 	- compare and find the winning Candidate
+ 3 Lastly write into the file
+
+***Refer to [Find Candidates Votes and Winner](#Find-Candidates-Votes-and-Winner)***
+
+## Python Code Snippets
+### To Read CSV
+
 ```phython
 # Add our dependencies.
 import csv
@@ -38,9 +82,9 @@ file_to_save = os.path.join("analysis", "election_analysis.txt")
 		reader = csv.reader(election_data)
 
 ```
-  
-  Code to write into the [Election Analysis file](/analysis/election_analysis.txt)
-  
+
+### To Write in TXT file
+
 ```phython
 # Add our dependencies.
 import os
@@ -62,13 +106,9 @@ with open(file_to_save, "w") as txt_file:
 
 txt_file.write(election_results)
 ```
-    
-#### Total votes casted in this congressional election 
-  Total of ***369,711** votes were casted during this Congressional Election.
- <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/TotalVotes.png" width="300" height="150"/>
- 
- code snippets to count Total Votes
- ```python
+
+### Calculate Total Votes
+```python
    # For each row in the CSV file.
     for row in reader:
 
@@ -85,33 +125,8 @@ txt_file.write(election_results)
         f"-------------------------\n\n"
  ```
  
-#### County wise breakdown and percentage of total votes and determined the largest number of votes of winning County
-<img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/LargestCountyVotes.png" width="300" height="200"/>
+### Find County Votes and Winner
 
-***To get distinct list of counties and count votes for each county***
- 1. Read each county value from the extracted row and check if the previous county name is same as the current. 
- 2. Once we have all the list of counties and corresponding vote countes
-	- Iterate through each county to find the percentage of Votes
- 	- compare and find the winning county
- 3 Lastly write into the file
- 
- Refer to [Code Snippet](#Python_Code_for_Candidates_Votes)
-
-#### Candidate wise breakdown and percentage of total votes and determined the winning Candidate
-	
-<img src="https://github.com/DeepaGheewala/Election_Analysis/blob/e23022b8df9a28cccc7f8bdb59923d0aeee94ffc/Resources/winner.png" width="300" height="200"/>
-
-***To get distinct list of candidates and count votes for each Candidate***
- 1. Read each Candidates from the extracted row and check if the previous county name is same as the current. 
- 2. Once we have all the list of counties and corresponding vote countes
-	- Iterate through each county to find the percentage of Votes
- 	- compare and find the winning Candidate
- 3 Lastly write into the file
-
-Refer to [Code Snippet](#Python_Code_for_County_Votes)
-
-## Code Snippets
-### Python Code for County Votes
 ```python
 # 4a: Write an if statement that checks that the
         # county does not match any existing county in the county list.
@@ -158,7 +173,9 @@ Refer to [Code Snippet](#Python_Code_for_County_Votes)
     print(turnout_results)
 
 ```
-### Python Code for Candidates Votes
+
+### Find Candidates Votes and Winner
+
 ```python
   # If the candidate does not match any existing candidate add it to
   # the candidate list

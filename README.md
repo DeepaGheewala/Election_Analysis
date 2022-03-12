@@ -63,7 +63,7 @@ with open(file_to_save, "w") as txt_file:
 txt_file.write(election_results)
 ```
     
-- ***Total votes casted in this congressional election***
+#### Total votes casted in this congressional election 
   Total of ***369,711** votes were casted during this Congressional Election.
  <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/TotalVotes.png" width="300" height="150"/>
  
@@ -85,16 +85,33 @@ txt_file.write(election_results)
         f"-------------------------\n\n"
  ```
  
-- ***County wise breakdown and percentage of total votes and determined the largest number of votes of winning County***
+#### County wise breakdown and percentage of total votes and determined the largest number of votes of winning County
 <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/LargestCountyVotes.png" width="300" height="200"/>
 
-* To get distinct list of counties and count votes for each county
- - read each county value from the extracted row and check if the previous county name is same as the current. 
- - Once we have all the list of counties and corresponding vote countes
- - 	Iterate through each county to find the percentage of Votes
- - 	compare and find the winning county
- - Lastly write into the file
+***To get distinct list of counties and count votes for each county***
+ 1. Read each county value from the extracted row and check if the previous county name is same as the current. 
+ 2. Once we have all the list of counties and corresponding vote countes
+	- Iterate through each county to find the percentage of Votes
+ 	- compare and find the winning county
+ 3 Lastly write into the file
  
+ Refer to [Code Snippet](#Python_Code_for_Candidates_Votes)
+
+#### Candidate wise breakdown and percentage of total votes and determined the winning Candidate
+	
+<img src="https://github.com/DeepaGheewala/Election_Analysis/blob/e23022b8df9a28cccc7f8bdb59923d0aeee94ffc/Resources/winner.png" width="300" height="200"/>
+
+***To get distinct list of candidates and count votes for each Candidate***
+ 1. Read each Candidates from the extracted row and check if the previous county name is same as the current. 
+ 2. Once we have all the list of counties and corresponding vote countes
+	- Iterate through each county to find the percentage of Votes
+ 	- compare and find the winning Candidate
+ 3 Lastly write into the file
+
+Refer to [Code Snippet](#Python_Code_for_County_Votes)
+
+## Code Snippets
+### Python Code for County Votes
 ```python
 # 4a: Write an if statement that checks that the
         # county does not match any existing county in the county list.
@@ -141,10 +158,58 @@ txt_file.write(election_results)
     print(turnout_results)
 
 ```
-- ***Candidate wise breakdown and percentage of total votes and determined the winning Candidate***
-	
-<img src="https://github.com/DeepaGheewala/Election_Analysis/blob/e23022b8df9a28cccc7f8bdb59923d0aeee94ffc/Resources/winner.png" width="300" height="200"/>
+### Python Code for Candidates Votes
+```python
+  # If the candidate does not match any existing candidate add it to
+  # the candidate list
+       
+  if candidate_name not in candidate_options:
 
+    # Add the candidate name to the candidate list.
+     candidate_options.append(candidate_name)
+
+    # And begin tracking that candidate's voter count.
+     candidate_votes[candidate_name] = 0
+
+    # Add a vote to that candidate's count
+     candidate_votes[candidate_name] += 1
+	
+...
+	
+# Save the final candidate vote count to the text file.
+    
+for candidate_name in candidate_votes:
+	# Retrieve vote count and percentage
+        votes = candidate_votes.get(candidate_name)
+        vote_percentage = float(votes) / float(total_votes) * 100
+        candidate_results = (
+            f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n\n")
+
+    	# Print each candidate's voter count and percentage to the
+        # terminal.
+        print(candidate_results)
+        #  Save the candidate results to our text file.
+        txt_file.write(candidate_results)
+
+        # Determine winning vote count, winning percentage, and candidate.
+        if (votes > winning_count) and (vote_percentage > winning_percentage):
+            winning_count = votes
+            winning_candidate = candidate_name
+            winning_percentage = vote_percentage
+
+# Print the winning candidate (to terminal)
+winning_candidate_summary = (
+    f"-------------------------\n"
+    f"Winner: {winning_candidate}\n"
+    f"Winning Vote Count: {winning_count:,}\n"
+    f"Winning Percentage: {winning_percentage:.1f}%\n"
+    f"-------------------------\n")
+print(winning_candidate_summary)
+
+# Save the winning candidate's name to the text file
+txt_file.write(winning_candidate_summary)
+
+```
 
 ## Resources
 CSV Files

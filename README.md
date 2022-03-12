@@ -1,7 +1,12 @@
 # Election_Analysis
 ## Overview of Election Audit
 ### Background
-Election commision was provided with Audit Results of the most recent Elections of Colorado. Upon this available data Election Commision requested more insite on the data and a detailed report.
+Colorado Board of Election collected data from 3 different voting modes
+1) Mail-in Ballot
+2) Punch Cards
+3) Direct Recording Electronic
+
+Election commision was provided with Audit Results collected from all the 3 voting modes. Upon this available data Election Commision requested more insite on the data and a detailed report.
 	
 ### Purpose
 The purpose of this project is to provide more information related to the Audit Results which was submitted to The Election Commission. We work over the data, analyzed and created a report to answers the following requested details
@@ -20,21 +25,24 @@ The below image shows the analysis results
 
 
 ### Detailed Report
-Let us understand in detail regarding the Analysis Report. The snapshots used below are taken from the [Election Analysis file](/analysis/election_analysis.txt)
+Let see more details regarding the Analysis Report. The snapshots used below are taken from the [Election Analysis file](/analysis/election_analysis.txt)
    
+   - Voting data of Colorado was provided in [Election CSV FILE](/Resources/election_results.csv). 
+   - First thing we had to read this CSV file. 
   ***Refer to the code snippet [To Read CSV](#To-Read-CSV)***
- 
   
-  ***Refer to the code snippet [To Write in TXT file](#To-Write-in-TXT-file)***
+   - Then Process the data and generate the results below
+   - Lastly write the generate a report into a Txt file to send it to Election Commission.
+   ***Refer to the code snippet [To Write in TXT file](#To-Write-in-TXT-file)***
   
   
 #### 1. TOTAL VOTES 
-   Total votes casted in this congressional election 
-   Total of ***369,711*** votes were casted during this Congressional Election.
+   Total ***369,711*** votes were casted during this Congressional Election.
+   This count includes all different ways of Voting modes [ie 1) By Mail , 2) By B
 
   <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/TotalVotes.png" width="300" height="150"/>
  
-   ***Refer to [Calculate Total Votes](#Calculate-Total-Votes)***
+   ***Refer Code Snippet to [Calculate Total Votes](#Calculate-Total-Votes)***
 
  
 #### 2. COUNTY VOTES  
@@ -49,7 +57,7 @@ Let us understand in detail regarding the Analysis Report. The snapshots used be
  >	 - compare and find the winning county
  >  3 Lastly write into the file
 
-   ***Refer to [Find County Votes and Winner](#Find-County-Votes-and-Winner)***
+   ***Refer Code Snippet to [Find County Votes and Winner](#Find-County-Votes-and-Winner)***
 
 #### 3. CANDIDATE VOTES
    Candidate wise breakdown and percentage of total votes and determined the winning Candidate
@@ -63,7 +71,7 @@ Let us understand in detail regarding the Analysis Report. The snapshots used be
 >	- compare and find the winning Candidate
 >   3 Lastly write into the file
 
-  ***Refer to [Find Candidates Votes and Winner](#Find-Candidates-Votes-and-Winner)***
+  ***Refer Code Snippet to [Find Candidates Votes and Winner](#Find-Candidates-Votes-and-Winner)***
 
 ## Election-Audit Summary
 

@@ -50,13 +50,12 @@ Let see more details regarding the Analysis Report. The snapshots used below are
 
   <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/LargestCountyVotes.png" width="300" height="200"/>
 
- >  ***To get distinct list of counties and count votes for each county***
- >  1. Read each county value from the extracted row and check if the previous county name is same as the current. 
- >  2. Once we have all the list of counties and corresponding vote countes  
- >   > Iterate through each county to find the percentage of Votes
- >   > Compare and find the winning county  
- >   
- >  3. Lastly write into the file
+***To get distinct list of counties and count votes for each county***  
+   * 1. Read each county value from the extracted row and check if the previous county name is same as the current. 
+   * 2. Once we have all the list of counties and corresponding vote countes  
+       *  Iterate through each county to find the percentage of Votes  
+       *  Compare and find the winning county  
+   * 3. Lastly write into the file
 
    ***Refer Code Snippet to [Find County Votes and Winner](#Find-County-Votes-and-Winner)***
 
@@ -65,13 +64,12 @@ Let see more details regarding the Analysis Report. The snapshots used below are
 
    <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/e23022b8df9a28cccc7f8bdb59923d0aeee94ffc/Resources/winner.png" width="300" height="200"/>
 
->   ***To get distinct list of candidates and count votes for each Candidate***
->   1. Read each Candidates from the extracted row and check if the previous county name is same as the current. 
->   2. Once we have all the list of counties and corresponding vote countes  
->   >  Iterate through each county to find the percentage of Votes
->   >  Compare and find the winning Candidate
->   
->   3. Lastly write into the file
+***To get distinct list of candidates and count votes for each Candidate***
+   * 1. Read each Candidates from the extracted row and check if the previous county name is same as the current. 
+   * 2. Once we have all the list of counties and corresponding vote countes  
+       * Iterate through each county to find the percentage of Votes  
+       * Compare and find the winning Candidate
+   * 3. Lastly write into the file
 
   ***Refer Code Snippet to [Find Candidates Votes and Winner](#Find-Candidates-Votes-and-Winner)***
 
@@ -80,11 +78,10 @@ Let see more details regarding the Analysis Report. The snapshots used below are
 This code logic for calculating votes can be used for any Elections like Senetorial or local Elections.
 By making some minor Code changes we can make this code workable for any Elections 
 Below are few suggestions to make it more usable across elections.  
-* 1) Make the file names to read and write Configurable
-     Ways to make configurable
-      1. **User Input** 
+* 1) Make the file names to read and write Configurable. Below are 2 suggestions to make configurable  
+      1. **User Input**  
          * Create an inputbox or dialog for User to profile file paths. 
-         * Code should read the input values and open those files for processing.
+         * Code should read the input values and open those files for processing. 
 
       2. **Configuration File** 
          * Create a Configuration File to store file names and path. 
@@ -267,6 +264,6 @@ txt_file.write(winning_candidate_summary)
 ```
 
 ## Resources
-CSV Files
-Phython 3.9.10
-VS Code 1.65.2
+CSV Files  
+Phython 3.9.10  
+VS Code 1.65.2  

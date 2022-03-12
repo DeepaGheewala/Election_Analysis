@@ -28,17 +28,17 @@ The below image shows the analysis results
 Let see more details regarding the Analysis Report. The snapshots used below are taken from the [Election Analysis file](/analysis/election_analysis.txt)
    
    - Voting data of Colorado was provided in [Election CSV FILE](/Resources/election_results.csv). 
-   - First thing we had to read this CSV file. 
-  ***Refer to the code snippet [To Read CSV](#To-Read-CSV)***
+   - First thing we had to read this CSV file.   
+  ***Refer to the code snippet [To Read CSV](#To-Read-CSV)***  
   
    - Then Process the data and generate the results below
-   - Lastly write the generate a report into a Txt file to send it to Election Commission.
-   ***Refer to the code snippet [To Write in TXT file](#To-Write-in-TXT-file)***
+   - Lastly write the generate a report into a Txt file to send it to Election Commission.  
+   ***Refer to the code snippet [To Write in TXT file](#To-Write-in-TXT-file)***  
   
   
 #### 1. TOTAL VOTES 
    Total ***369,711*** votes were casted during this Congressional Election.
-   This count includes all different ways of Voting modes [ie 1) By Mail , 2) By B
+   This count includes all different ways of Voting modes as explained in the [Background](#Background)
 
   <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/TotalVotes.png" width="300" height="150"/>
  
@@ -52,10 +52,11 @@ Let see more details regarding the Analysis Report. The snapshots used below are
 
  >  ***To get distinct list of counties and count votes for each county***
  >  1. Read each county value from the extracted row and check if the previous county name is same as the current. 
- >  2. Once we have all the list of counties and corresponding vote countes
- >	 - Iterate through each county to find the percentage of Votes
- >	 - compare and find the winning county
- >  3 Lastly write into the file
+ >  2. Once we have all the list of counties and corresponding vote countes  
+ >   > Iterate through each county to find the percentage of Votes
+ >   > Compare and find the winning county  
+ >   
+ >  3. Lastly write into the file
 
    ***Refer Code Snippet to [Find County Votes and Winner](#Find-County-Votes-and-Winner)***
 
@@ -66,14 +67,39 @@ Let see more details regarding the Analysis Report. The snapshots used below are
 
 >   ***To get distinct list of candidates and count votes for each Candidate***
 >   1. Read each Candidates from the extracted row and check if the previous county name is same as the current. 
->   2. Once we have all the list of counties and corresponding vote countes
->	- Iterate through each county to find the percentage of Votes
->	- compare and find the winning Candidate
->   3 Lastly write into the file
+>   2. Once we have all the list of counties and corresponding vote countes  
+>   >  Iterate through each county to find the percentage of Votes
+>   >  Compare and find the winning Candidate
+>   
+>   3. Lastly write into the file
 
   ***Refer Code Snippet to [Find Candidates Votes and Winner](#Find-Candidates-Votes-and-Winner)***
 
 ## Election-Audit Summary
+### Proposal
+This code logic for calculating votes can be used for any Elections like Senetorial or local Elections.
+By making some minor Code changes we can make this code workable for any Elections 
+Below are few suggestions to make it more usable across elections.  
+* 1) Make the file names to read and write Configurable
+     Ways to make configurable
+      1. **User Input** 
+         * Create an inputbox or dialog for User to profile file paths. 
+         * Code should read the input values and open those files for processing.
+
+      2. **Configuration File** 
+         * Create a Configuration File to store file names and path. 
+         * Code should read this file and open the files to process.
+  
+* 2) Add code to support different file types like xml, text etc for both input and output 
+
+  * Current code is to read only csv file, we can add more checks on file types and load related libraries to support the file support and process them.
+  * User can also select the format in which they need output.  
+
+* 3) More categorized Data can be added in the report.
+
+  * Statewise voting results
+  * Statewise winner
+
 
 
 ## Python Code Snippets 

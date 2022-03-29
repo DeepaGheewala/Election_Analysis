@@ -21,7 +21,7 @@ In order to analyze the data we read the data from [Election Result data file](h
 The Election Result Data file was analyzed using the Python Code and the results generated were stored into [Election Analysis text file](https://github.com/DeepaGheewala/Election_Analysis/blob/694fc9f2d651ffb8712654427bf5171775bf11bf/analysis/election_analysis.txt)
 The below image shows the analysis results printed on the command line
 
-<img src="https://github.com/DeepaGheewala/Election_Analysis/blob/b44725b26098e8f5b4c3730b0cc82a5c77e1bb44/Resources/CommanLine_Output.png" width="350" height="450"/>
+<kbd> <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/b44725b26098e8f5b4c3730b0cc82a5c77e1bb44/Resources/CommanLine_Output.png" width="350" height="450"/></kbd> 
 
 
 ### Detailed Report

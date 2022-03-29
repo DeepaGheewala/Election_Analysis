@@ -40,7 +40,7 @@ Let see more details regarding the Analysis Report. The snapshots used below are
    Total ***369,711*** votes were cast during this Congressional Election.
    This count includes all different ways of Voting modes as explained in the [Background](#Background)
 
-  <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/TotalVotes.png" width="250" height="300"/>
+  <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/TotalVotes.png" width="250" height="300" border="1px solid red"/>
  
    ***Refer Code Snippet to [Calculate Total Votes](#Calculate-Total-Votes)***
 

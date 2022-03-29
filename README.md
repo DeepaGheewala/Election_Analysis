@@ -48,7 +48,7 @@ Let see more details regarding the Analysis Report. The snapshots used below are
 #### 2. COUNTY VOTES  
    County wise breakdown and percentage of total votes and determine the largest number of votes of winning County
 
-  <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/LargestCountyVotes.png" width="300" height="200" style="border: 1px solid black"/>
+  <img src="https://github.com/DeepaGheewala/Election_Analysis/blob/735e962a245065f7dd740f0209eaf7ee15dd1c1c/Resources/LargestCountyVotes.png" width="300" height="200" style="border: 10px solid black"/>
 
 ***To get a distinct list of counties and count votes for each county***  
    * 1. Read each county value from the extracted row and check if the previous county name is the same as the current. 
